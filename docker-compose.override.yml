@@ -3,8 +3,12 @@ version: '3.7'
 services:
   docs:
     image: docs:latest
+    build:
+      context: .
     networks:
       - traefik-public
+    ports:
+      - 80:80
     deploy:
       resources:
         limits:
