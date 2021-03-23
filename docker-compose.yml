@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+  docs:
+    image: docs:latest
+    #    networks:
+    #      - traefik-public
+    ports:
+      - 80:80
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 512M
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=traefik-public
+        - traefik.constraint-label=traefik-public
+        - traefik.http.routers.docs-http.rule=Host(`${DOMAIN-docs.agents.bar}`)
+        - traefik.http.routers.docs-http.entrypoints=http
+        - traefik.http.routers.docs-http.middlewares=https-redirect
+        - traefik.http.routers.docs-https.rule=Host(`${DOMAIN-docs.agents.bar}`)
+        - traefik.http.routers.docs-https.entrypoints=https
+        - traefik.http.routers.docs-https.tls=true
+        - traefik.http.routers.docs-https.tls.certresolver=le
+        - traefik.http.services.docs.loadbalancer.server.port=8080
+
+networks:
+  traefik-public:
+    #external: true
+
