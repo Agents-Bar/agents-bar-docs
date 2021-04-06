@@ -1,7 +1,7 @@
 Agents
 ======
 
-The main interaction with agents it through the `ai-traineree-client` python module.
+The main interaction with agents it through the `ai-traineree-client <https://pypi.org/project/ai-traineree-client/>`_ python module.
 
 Currently supported agent models:
 

@@ -1,6 +1,7 @@
 import os
 import sys
 # sys.path.insert(0, os.path.abspath('.'))
+import ai_traineree_client
 
 
 # -- Project information -----------------------------------------------------
@@ -20,8 +21,8 @@ release = 'alpha'
 # ones.
 extensions = [
     "sphinx.ext.autodoc",
-    "sphinx.ext.autosectionlabel",
     "sphinx.ext.intersphinx",
+    "sphinx.ext.autosectionlabel",
     "sphinx.ext.mathjax",
     "sphinx.ext.viewcode",
     "sphinx.ext.napoleon",
@@ -35,11 +36,12 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.venv']
 
+autosectionlabel_prefix_document = True
 napoleon_include_init_with_doc = True
 autodoc_member_order ="bysource"
 
 def setup (app):
-    app.add_stylesheet('custom.css')
+    app.add_css_file('custom.css')
 
 # -- Options for HTML output -------------------------------------------------
 

@@ -3,10 +3,10 @@ FROM alpine:latest as build-stage
 
 RUN mkdir -p /etc/sphinx/build
 RUN apk add --no-cache python3 py3-pip make git
-# RUN pip3 install git+https://github.com/sphinx-doc/sphinx && \
 
 RUN python3 -m pip install sphinx && \
     python3 -m pip install sphinx-theme
+RUN python3 -m pip install --no deps ai-traineree-client tenacity
 
 COPY ./ /etc/sphinx/
 WORKDIR /etc/sphinx

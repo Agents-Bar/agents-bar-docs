@@ -7,7 +7,7 @@ This means that only a selected of close friends are granted access. Sorry. But,
 What are the ways, you ask?
 ---------------------------
 
-The one truely preferred way is for you become our friend. Go ahead and check :ref:`contact <Contact>` to learn how to say hi, friend.
+The one truely preferred way is for you become our friend. Go ahead and check :ref:`contact <contact:Contact>` to learn how to say hi, friend.
 We're always keen on meeting new people and learning their plans and hobbies.
 
 Another way is to add yourself to the waiting list. When we're ready for beta release we'll contact some of the people

@@ -1,11 +1,11 @@
 Agents
 ======
 
-Agents are entities that can interact with an environment_ and become better at something.
+Agents are entities that can interact with an :ref:`environment <concepts/environment:environment>` and become better at something.
 This is somehow vague because agents can do many things depending on the task. 
 To avoid being too philosophical or technical, let's just say that agents are optimizing
 doing a task but that task is sensitive to any changes.
-That is still quite broad but manybe `examples <Examples>`_ would give some colouring.
+That is still quite broad but maybe :ref:`examples <concepts/agents:examples>` would give some colouring.
 
 In very technical terms when refering to agents we mean an implementation of the deep reinforcement learning agent.
 
