@@ -6,7 +6,7 @@ RUN apk add --no-cache python3 py3-pip make git
 
 RUN python3 -m pip install sphinx && \
     python3 -m pip install sphinx-theme
-RUN python3 -m pip install --no deps ai-traineree-client tenacity
+RUN python3 -m pip install --no-deps ai-traineree-client tenacity
 
 COPY ./ /etc/sphinx/
 WORKDIR /etc/sphinx
