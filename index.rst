@@ -9,14 +9,22 @@ Agents Bar Docs
    Quick start <getting-started/quick-start.rst>
    Tutorial <getting-started/tutorial.rst>
    Installation <getting-started/installation.rst>
-   Register <getting-started/register>
+   Register <getting-started/register.rst>
+
+.. toctree::
+   :maxdepth: 1
+   :caption: API
+
+   Agents  <api/agents.rst>
+
 
 .. toctree::
    :maxdepth: 1
    :caption: Concepts
 
    Agents <concepts/agents.rst>
-   Monitoring <concepts/monitoring.rst>
+   Environment <concepts/environment.rst>
+   State <concepts/state.rst>
 
 
 .. toctree::

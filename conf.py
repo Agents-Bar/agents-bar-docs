@@ -6,7 +6,7 @@ import sys
 # -- Project information -----------------------------------------------------
 
 project = 'Agents Bar Docs'
-copyright = '2021, Agents Bar Ltd.'
+copyright = '2021, Agents Bar Ltd'
 author = 'Dawid Laszuk'
 
 # The full version, including alpha/beta/rc tags
@@ -23,7 +23,8 @@ extensions = [
     "sphinx.ext.autosectionlabel",
     "sphinx.ext.intersphinx",
     "sphinx.ext.mathjax",
-    # "sphinx.ext.viewcode",
+    "sphinx.ext.viewcode",
+    "sphinx.ext.napoleon",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -34,6 +35,8 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.venv']
 
+napoleon_include_init_with_doc = True
+autodoc_member_order ="bysource"
 
 def setup (app):
     app.add_stylesheet('custom.css')
@@ -47,7 +50,6 @@ def setup (app):
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-#html_theme = 'alabaster'
 # NOTE: All the lines are after this are the theme-specific ones. These are
 #       written as part of the site generation pipeline for this project.
 # !! MARKER !!
