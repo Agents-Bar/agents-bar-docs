@@ -13,6 +13,13 @@ Agents Bar Docs
 
 .. toctree::
    :maxdepth: 1
+   :caption: Console
+
+   Introduction <console/intro.rst>
+   Agents <console/agents.rst>
+
+.. toctree::
+   :maxdepth: 1
    :caption: API
 
    Agents  <api/agents.rst>
