@@ -17,6 +17,7 @@ Agents Bar Docs
 
    Introduction <console/intro.rst>
    Agents <console/agents.rst>
+   Data Sink <console/sinks.rst>
 
 .. toctree::
    :maxdepth: 1
