@@ -72,7 +72,7 @@ Although most agents are created the same way, their configuration will have a s
 Below are all available options to pass to each agent, their default values and their descriptions.
 
 DQN
-###
+```
 
 All values relate to the ones in the `AI Traineree DQN <https://ai-traineree.readthedocs.io/en/latest/agents.html#dqn>`_.
 
@@ -134,7 +134,7 @@ All values relate to the ones in the `AI Traineree DQN <https://ai-traineree.rea
       - N steps reward lookahead
 
 PPO
-###
+```
 
 All values relate to the ones in the `AI Traineree PPO <https://ai-traineree.readthedocs.io/en/latest/agents.html#ppo>`_.
 
@@ -220,7 +220,7 @@ All values relate to the ones in the `AI Traineree PPO <https://ai-traineree.rea
       - Weight of the entropy term in the loss.
 
 DDPG
-####
+````
 
 All values relate to the ones in the `AI Traineree DDPG <https://ai-traineree.readthedocs.io/en/latest/agents.html#ddpg>`_.
 
@@ -294,7 +294,7 @@ All values relate to the ones in the `AI Traineree DDPG <https://ai-traineree.re
       - How much to scale action value (std var in action distribution)
 
 Rainbow
-#######
+```````
 
 All values relate to the ones in the `AI Traineree Rainbow <https://ai-traineree.readthedocs.io/en/latest/agents.html#rainbow>`_.
 
@@ -304,6 +304,7 @@ All values relate to the ones in the `AI Traineree Rainbow <https://ai-traineree
 
     * - Key
       - Default
+      - Type
       - Description
     * - hidden_layers
       - (100, 100)
@@ -352,7 +353,7 @@ All values relate to the ones in the `AI Traineree Rainbow <https://ai-traineree
     * - n_steps
       - 3
       - int
-      - Number of lookahead steps when estimating reward. See :ref:`NStepBuffer`. 
+      - Number of lookahead steps when estimating reward.
     * - v_min
       - -10
       - float

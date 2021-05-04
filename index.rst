@@ -2,12 +2,16 @@
 Agents Bar Docs
 ===============
 
+Welcome to Agents Bar documentation. It's unlikely you got here by accident but in case you did just visit `Agents Bar <https://agents.bar>`_.
+
+Here we will do our best to get you started using the service and explain everything that you need to know.
+If you find that something is missing we would really appreciate if you let us know by :ref:`contacting us <contact:Contact>`.
+
 .. toctree::
    :maxdepth: 1
    :caption: Getting started
 
    Quick start <getting-started/quick-start.rst>
-   Tutorial <getting-started/tutorial.rst>
    Installation <getting-started/installation.rst>
    Register <getting-started/register.rst>
 
@@ -24,7 +28,9 @@ Agents Bar Docs
    :maxdepth: 1
    :caption: API
 
-   Agents  <api/agents.rst>
+   Documented APIs (external) <https://agents.bar/redoc>
+   Testable APIs (external) <https://agents.bar/doc>
+   Agents <api/agents>
 
 
 .. toctree::
