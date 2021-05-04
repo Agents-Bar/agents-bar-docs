@@ -76,4 +76,3 @@ html_theme_options = {
 #    'github_version': 'master', # Branch
 #    'conf_py_path': '/docs/', # Path in the checkout to the docs root
 #}
-

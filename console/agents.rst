@@ -76,54 +76,61 @@ DQN
 
 All values relate to the ones in the `AI Traineree DQN <https://ai-traineree.readthedocs.io/en/latest/agents.html#dqn>`_.
 
-.. list-table:: Agent configuration
-    :widths: 20 20 30
+.. list-table:: DQN agent configuration
+    :widths: 20 20 10 30
     :header-rows: 1
 
     * - Key
       - Default
+      - Type
       - Description
-    * - state_size
-      - N/A
-      - Number of values to expect from observations.
-    * - action_size
-      - N/A
-      - For discrete problem, that's a number of potential values. For continuous, that' number of values.
     * - hidden_layers
       - (64, 64)
+      - tuple of ints
       - Tuple defining hidden dimensions in fully connected nets.
     * - lr
-      - 3e-4
+      - 3e-(4
+      - float
       - Learning rate
     * - gamma
       - 0.99
+      - float
       - discount factor
     * - tau
       - 0.002
+      - float
       - soft-copy factor
     * - update_freq
       - 1
+      - int
       - Number of steps between each learning.
     * - batch_size
       - 64
+      - int
       - Number of samples to use in learning.
     * - buffer_size
       - 1e5
+      - int
       - Size of the experience buffer.
     * - warm_up
       - 0
+      - int
       - How many samples to wait before performing learning.
     * - number_updates
       - 1
+      - int
       - Per learning, how many times to compute error and update agent.
     * - max_grad_norm
       - 10
+      - float
       - Maximum at which the gradient is capped.
     * - using_double_q
       - true
+      - bool
       - Whether to use double Q value
-    * - n_steps 
+    * - n_steps
       - 1
+      - int
       - N steps reward lookahead
 
 PPO
@@ -131,72 +138,85 @@ PPO
 
 All values relate to the ones in the `AI Traineree PPO <https://ai-traineree.readthedocs.io/en/latest/agents.html#ppo>`_.
 
-.. list-table:: Agent configuration
-    :widths: 20 20 30
+.. list-table:: PPO agent configuration
+    :widths: 20 20 10 30
     :header-rows: 1
 
     * - Key
       - Default
+      - Type
       - Description
-    * - state_size
-      - N/A
-      - Number of values to expect from observations.
-    * - action_size
-      - N/A
-      - For discrete problem, that's a number of potential values. For continuous, that' number of values.
     * - hidden_layers
       - (100, 100)
+      - tuple of ints
       - Tuple defining hidden dimensions in fully connected nets.
     * - is_discrete
       - False
+      - bool
       - Whether return discrete action.
     * - kl_div
       - False
+      - bool
       - Whether to use KL divergence in loss.
     * - using_gae
       - True
+      - bool
       - Whether to use General Advantage Estimator.
     * - gae_lambda
       - 0.96
+      - float
       - Value of lambda in GAE.
     * - actor_lr
       - 0.0003
+      - float
       - Learning rate for the actor (policy).
     * - critic_lr
       - 0.001
+      - float
       - Learning rate for the critic (value function).
     * - actor_betas
-      - (0.9, 0.999
+      - (0.9, 0.999)
+      - tuple of floats
       - Adam’s betas for actor optimizer.
     * - critic_betas
-      - (0.9, 0.999
+      - (0.9, 0.999)
+      - tulple of floats
       - Adam’s betas for critic optimizer.
     * - gamma
       - 0.99
+      - float
       - Discount value.
     * - ppo_ratio_clip
       - 0.25
+      - float
       - Policy ratio clipping value.
     * - num_epochs
       - 1
+      - int
       - Number of time to learn from samples.
     * - rollout_length
       - 48
+      - int
       - Number of actions to take before update.
     * - batch_size
       - rollout_length
+      - int
       - Number of samples used in learning.
     * - actor_number_updates
       - 10
+      - int
       - Number of times policy losses are propagated.
     * - critic_number_updates
       - 10
+      - int
       - Number of times value losses are propagated.
     * - entropy_weight
       - 0.005
+      - float
       - Weight of the entropy term in the loss.
     * - value_loss_weight
       - 0.005
+      - float
       - Weight of the entropy term in the loss.
 
 DDPG
@@ -204,61 +224,145 @@ DDPG
 
 All values relate to the ones in the `AI Traineree DDPG <https://ai-traineree.readthedocs.io/en/latest/agents.html#ddpg>`_.
 
-.. list-table:: Agent configuration
-    :widths: 20 20 30
+.. list-table:: DDPG agent configuration
+    :widths: 20 20 10 30
+    :header-rows: 1
+
+    * - Key
+      - Default
+      - Type
+      - Description
+    * - hidden_layers 
+      - (128, 128)
+      - tuple of ints
+      - Tuple defining hidden dimensions in fully connected nets.
+    * - actor_lr
+      - 3e-4
+      - float
+      - Actor specific learning rate
+    * - critic_lr
+      - 3e-4
+      - float
+      - Critic specific learning rate
+    * - gamma
+      - 0.99
+      - float
+      - discount factor
+    * - tau 
+      - 0.002
+      - float
+      - soft-copy factor
+    * - update_freq 
+      - 1
+      - int
+      - Number of steps between each learning.
+    * - batch_size
+      - 64
+      - int
+      - Number of samples to use in learning.
+    * - buffer_size
+      - 1e5
+      - int
+      - Size of the experience buffer.
+    * - warm_up
+      - 0
+      - int
+      - How many samples to wait before performing learning.
+    * - number_updates
+      - 1
+      - int
+      - Per learning, how many times to compute error and update agent.
+    * - max_grad_norm_actor
+      - 10
+      - float
+      - Maximum at which critic's gradient is capped.
+    * - max_grad_norm_critic
+      - 10
+      - float
+      - Maximum at which actor's gradient is capped.
+    * - action_min
+      - -1
+      - float
+      - Minimum returned action value
+    * - action_max
+      - 1
+      - float
+      - Maximum returned action value
+    * - action_scale
+      - 1
+      - float
+      - How much to scale action value (std var in action distribution)
+
+Rainbow
+#######
+
+All values relate to the ones in the `AI Traineree Rainbow <https://ai-traineree.readthedocs.io/en/latest/agents.html#rainbow>`_.
+
+.. list-table:: Rainbow agent configuration
+    :widths: 20 20 10 30
     :header-rows: 1
 
     * - Key
       - Default
       - Description
-    * - state_size
-      - N/A
-      - Number of values to expect from observations.
-    * - action_size
-      - N/A
-      - For discrete problem, that's a number of potential values. For continuous, that' number of values.
     * - hidden_layers
-      - (128, 128)
-      - Tuple defining hidden dimensions in fully connected nets.
-    * - actor_lr
-      - 3e-4
-      - Actor specific learning rate
-    * - critic_lr
-      - 3e-4
-      - Critic specific learning rate
+      - (100, 100)
+      - tuple of ints
+      - Shape and sizes of fully connected networks used. 
+    * - lr
+      - 1e-3
+      - float
+      - Learning rate value.
     * - gamma
       - 0.99
-      - discount factor
+      - float
+      - Discount factor. 
     * - tau
       - 0.002
-      - soft-copy factor
+      - float
+      - Soft-copy factor. 
     * - update_freq
       - 1
-      - Number of steps between each learning.
+      - int
+      - Number of steps between each learning step. 
     * - batch_size
-      - 64
-      - Number of samples to use in learning.
+      - 80
+      - int
+      - Number of samples to use at each learning step. 
     * - buffer_size
       - 1e5
-      - Size of the experience buffer.
+      - int
+      - Number of most recent samples to keep in memory for learning. 
     * - warm_up
       - 0
-      - How many samples to wait before performing learning.
+      - int
+      - Number of samples to observe before starting any learning step. 
     * - number_updates
       - 1
-      - Per learning, how many times to compute error and update agent.
-    * - max_grad_norm_actor
+      - int
+      - How many times to use learning step in the learning phase. 
+    * - max_grad_norm
       - 10
-      - Maximum at which critic's gradient is capped.
-    * - max_grad_norm_critic
+      - float
+      - Maximum norm of the gradient used in learning. 
+    * - using_double_q
+      - True
+      - bool
+      - Whether to use Double Q Learning network. 
+    * - n_steps
+      - 3
+      - int
+      - Number of lookahead steps when estimating reward. See :ref:`NStepBuffer`. 
+    * - v_min
+      - -10
+      - float
+      - Lower bound for distributional value V. 
+    * - v_max
       - 10
-      - Maximum at which actor's gradient is capped.
-    * - action_min
-      - -1
-      - Minimum returned action value
-    * - action_max
-      - 1
-      - Maximum returned action value
-    * - action_scale
-      - 1
-      - How much to scale action value (std var in action distribution)
+      - float
+      - Upper bound for distributional value V. 
+    * - num_atoms
+      - 21
+      - int
+      - Number of atoms (discrete states) in the value V distribution. 
+
