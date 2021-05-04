@@ -19,6 +19,9 @@ To navigate between pages use arrows in the bottom right corner, or use the **se
 Create agent
 ------------
 
+Manual creation
+```````````````
+
 When you click "Create Agent" it will take you to the agent creation page.
 To create an agent the following are expected:
 
@@ -36,16 +39,34 @@ To create an agent the following are expected:
       - Text indicating something specific about this agent.
     * - Is Active
       - Checkbox whether to create an active agent.
+    * - State size
+      - Number of values to expect from observations.
+    * - Action size
+      - For discrete problem, that's a number of potential values. For continuous, that' number of values.
     * - Agent Configuration
-      - JSON configuration of the agent. It has to contain at least "state_size" and "action_size".
+      - JSON configuration of the agent.
 
 .. Note::
 
     We understand that providing a JSON into configuration might not be the best user interface and so we will promise an improvement.
     For now, however, please see :ref:`Agent Configuration <console/agents:Agent Configuration>` for details on each agent.
+    Feel free to reach out and let us know about your preferences. We are prioritizing work based on demand.
+
+From a Snapshot
+```````````````
+
+Another option to create an agent is through uploading a Snapshot.
+This is a preferred method when you have already a Snapshot of a trained agent.
+Snapshots can be obtained be either sharing them with other users, or downloading a snapshot from one of your agents.
+
+To create an agent from a Snapshot go to `Agents <https://agents.bar/console/console/agents>`_ and click on the **From Snapshot** button.
+This will take you to a form where you'll be able to type new agent's name and select where your snapshot file is located.
+Once both options are properly filled the **Save** button should be available.
+After submitting the form you should see the agent on the Agents view page.
+
 
 Agent Configuration
-```````````````````
+-------------------
 
 Although most agents are created the same way, their configuration will have a slightly different impact.
 Below are all available options to pass to each agent, their default values and their descriptions.
