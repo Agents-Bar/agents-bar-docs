@@ -23,6 +23,7 @@ If you find that something is missing we would really appreciate if you let us k
    Agents <console/agents.rst>
    Data Sink <console/sinks.rst>
    Snapshots <console/snapshots.rst>
+   Monitors <console/monitors.rst>
 
 .. toctree::
    :maxdepth: 1
