@@ -1,4 +1,4 @@
 sphinx
 sphinx-theme
 
-ai-traineree-client
+agents-bar~=0.4

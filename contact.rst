@@ -26,6 +26,6 @@ Don't hestiate to create an "issue"/ticket or reach out through means mentioned 
     :widths: 20, 30
 
     "AI Traineree", (GitHub) `ai-traineree <https://github.com/laszukdawid/ai-traineree>`_
-    "AI Traineree Client", (GitHub) `ai-traineree-client <https://github.com/laszukdawid/ai-traineree-client>`_
+    "Agents Bar Client Python", (GitHub) `agents-bar-client-python <https://github.com/Agents-Bar/agents-bar-client-python>`_
 
 

@@ -1,4 +1,4 @@
-import ai_traineree_client
+import agents_bar
 
 
 # -- Project information -----------------------------------------------------

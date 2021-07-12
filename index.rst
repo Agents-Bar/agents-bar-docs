@@ -21,7 +21,9 @@ If you find that something is missing we would really appreciate if you let us k
 
    Introduction <console/intro.rst>
    Agents <console/agents.rst>
-   Data Sink <console/sinks.rst>
+   Environments <console/environments.rst>
+   Experiments <console/experiments.rst>
+   Sinks <console/sinks.rst>
    Snapshots <console/snapshots.rst>
    Monitors <console/monitors.rst>
 
