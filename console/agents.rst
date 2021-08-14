@@ -39,10 +39,11 @@ To create an agent the following are expected:
       - Text indicating something specific about this agent.
     * - Is Active
       - Checkbox whether to create an active agent.
-    * - State size
-      - Number of values to expect from observations.
-    * - Action size
-      - For discrete problem, that's a number of potential values. For continuous, that' number of values.
+    * - Observation space
+      - Definition of the observation space.
+    * - Action space
+    * - Action space
+      - Definition of the action space.
     * - Agent Configuration
       - JSON configuration of the agent.
 
@@ -51,6 +52,11 @@ To create an agent the following are expected:
     We understand that providing a JSON into configuration might not be the best user interface and so we will promise an improvement.
     For now, however, please see :ref:`Agent Configuration <console/agents:Agent Configuration>` for details on each agent.
     Feel free to reach out and let us know about your preferences. We are prioritizing work based on demand.
+
+When selecting ``CUSTOM`` as the agent Model an ``image name`` field will appear.
+This field is required for custom agents and it should contain docker (or alternative) image name for 
+publicly accessible image.
+For example, to use an agent with random actions, i.e. dummy agent, one would use ``laszukdawid/dummy-agent`` from `docker hub repository <https://hub.docker.com/repository/docker/laszukdawid/dummy-agent>`_.
 
 From a Snapshot
 ```````````````
@@ -64,6 +70,15 @@ This will take you to a form where you'll be able to type new agent's name and s
 Once both options are properly filled the **Save** button should be available.
 After submitting the form you should see the agent on the Agents view page.
 
+Custom agent
+------------
+
+Agents Bar allows adding and using custom agents.
+By *custom agents* we refer to all agents that aren't officially supported.
+These agents need to in form of a Docker (or alternative) image and stored in an public (read) repository.
+
+Communication with these containers is through http so the custom agent needs to expose port 80.
+Specifications on required APIs is provided in out open github repository `RL API Definitions <https://github.com/Agents-Bar/rl-api-definitions>`_.
 
 Agent Configuration
 -------------------
