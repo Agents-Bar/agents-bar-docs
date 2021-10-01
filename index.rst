@@ -23,6 +23,7 @@ If you find that something is missing we would really appreciate if you let us k
    Agents <console/agents.rst>
    Environments <console/environments.rst>
    Experiments <console/experiments.rst>
+   Leagues <console/leagues.rst>
    Sinks <console/sinks.rst>
    Snapshots <console/snapshots.rst>
    Monitors <console/monitors.rst>
@@ -43,6 +44,7 @@ If you find that something is missing we would really appreciate if you let us k
    Agents <concepts/agents.rst>
    Environment <concepts/environment.rst>
    State <concepts/state.rst>
+   League <concepts/league.rst>
 
 
 .. toctree::
