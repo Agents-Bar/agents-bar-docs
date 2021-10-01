@@ -1,4 +1,4 @@
 sphinx
 sphinx-theme
 
-agents-bar~=0.4
+agents-bar~=0.6

@@ -1,4 +1,3 @@
-# Need to change this. The base image is 3.24 GB
 FROM alpine:latest as build-stage
 
 RUN mkdir -p /etc/sphinx/build

@@ -42,7 +42,6 @@ To create an agent the following are expected:
     * - Observation space
       - Definition of the observation space.
     * - Action space
-    * - Action space
       - Definition of the action space.
     * - Agent Configuration
       - JSON configuration of the agent.
