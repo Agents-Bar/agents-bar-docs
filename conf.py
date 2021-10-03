@@ -65,11 +65,11 @@ html_theme_options = {
     'display_version': True,
 }
 
-#html_context = {
-#    'display_github': True, # Integrate Gitlab
-#    #'gitlab_host': 'gitlab.audeering.com',
-#    'github_user': 'laszukdawid', # Username
-#    'github_repo': 'ai-traineree', # Repo name
-#    'github_version': 'master', # Branch
-#    'conf_py_path': '/docs/', # Path in the checkout to the docs root
-#}
+html_context = {
+    'display_github': True, # Integrate Gitlab
+    #'gitlab_host': 'gitlab.audeering.com',
+    'github_user': 'agents-bar', # Username
+    'github_repo': 'agents-bar-docs', # Repo name
+    'github_version': 'master', # Branch
+    'conf_py_path': '/', # Path in the checkout to the docs root
+}
