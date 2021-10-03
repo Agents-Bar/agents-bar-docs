@@ -15,6 +15,6 @@ All agents, however, have access to computed losses and network weights summarie
 Image below shows loss values for an particular agent.
 
 
-.. image:: /_static/monitor.png
+.. image:: /_static/images/monitor.png
     :width: 600
     :alt: Monitor showing losses

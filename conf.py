@@ -10,7 +10,6 @@ author = 'Dawid Laszuk'
 # The full version, including alpha/beta/rc tags
 release = 'alpha'
 
-
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
@@ -56,8 +55,9 @@ import sphinx_theme
 html_theme = "stanford_theme"
 html_static_path = ['_static']
 html_title = project
-html_logo = '_static/logo-filled.png'
-# html_logo = '_static/logo-dark.png'
+html_logo = '_static/images/logo-filled.png'
+html_favicon = '_static/images/favicon_64x64.png'
+# html_logo = '_static/images/logo-dark.png'
 
 html_theme_path = [sphinx_theme.get_html_theme_path('stanford-theme')]
 html_theme_options = {
