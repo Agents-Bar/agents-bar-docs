@@ -32,6 +32,7 @@ If you find that something is missing we would really appreciate if you let us k
    :maxdepth: 1
    :caption: API
 
+   Workflow <api/workflow>
    Documented APIs (external) <https://agents.bar/redoc>
    Testable APIs (external) <https://agents.bar/doc>
    Agents <api/agents>
