@@ -10,7 +10,7 @@ Prerequisite
 ------------
 
 Before using our APIs you need to have an account.
-To create an account please see `Register <../getting-started/register>`_ page.
+To create an account please see `Register <../getting-started/register.html>`_ page.
 You'll use these credentials to authenticate your client and obtain necessary token.
 
 Workflow

@@ -34,7 +34,7 @@ If you find that something is missing we would really appreciate if you let us k
 
    Workflow <api/workflow>
    Documented APIs (external) <https://agents.bar/redoc>
-   Testable APIs (external) <https://agents.bar/doc>
+   Testable APIs (external) <https://agents.bar/docs>
    Agents <api/agents>
 
 
